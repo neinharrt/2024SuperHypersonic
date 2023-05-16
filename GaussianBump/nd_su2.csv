@@ -1,0 +1,10 @@
+# Matthew J. Zahr,University of Notre Dame
+# Fixed Grid
+# SU2
+# Vertex-centered FV,Solver setup from: https://su2code.github.io/tutorials/Inviscid_Bump/
+Ndofs,Herror
+1116,0.000407
+4148,0.000317
+15972,0.000266
+62660,0.000214
+248196,0.000156

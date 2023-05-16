@@ -1,0 +1,7 @@
+# Matthew J. Zahr,University of Notre Dame
+# Adaptive Grid (r)
+# mCaMOpde
+# P3/Q2 solution,DG/Roe/HOIST
+Ndofs,Herror,Solution dofs,Mesh dofs
+10428,0.00033,9480,948
+41710,2.03e-05,37920,3790
