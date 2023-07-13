@@ -2,7 +2,7 @@
 # Adaptive Grid (r)
 # mCaMOpde
 # P2/Q2 solution,DG/Roe/HOIST
-Ndofs,Herror,Solution dofs,Mesh dofs
-6636,0.000386,5688,948
-26542,4.22e-05,22752,3790
-106166,6.45e-06,91008,15158
+Ndofs,Herror,Solution dofs,Mesh dofs,Shock attachment (x)
+6636,0.000386,5688,948,0.10533751557
+26542,4.22e-05,22752,3790,0.10279591661
+106166,6.45e-06,91008,15158,0.10285179563
