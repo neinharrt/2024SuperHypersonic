@@ -3,7 +3,7 @@ This repository is a resource for the Shock-Dominated Flows test suite working g
 The group meets every second Thursday of the month at 11am US Eastern Time.
 Please contact [Matt Zahr](mailto:mzahr@nd.edu) or [Kevin Holst](kholst@utk.edu) for a meeting link.
 The cases were described in a
-[SciTech 2023 paper](https://highfidelitycfdverificationworkshop.github.io/papers/superhypersonic.pdf). The Sajben diffuser has been updated since this publications; the current version can be found [here](https://highfidelitycfdverificationworkshop.github.io/2024SuperHypersonic/UpdatedSajbenDiffuser.pdf).
+[SciTech 2023 paper](https://highfidelitycfdverificationworkshop.github.io/papers/superhypersonic.pdf). The Sajben diffuser has been updated since this publications; the current version can be found [here](https://github.com/HighFidelityCFDVerificationWorkshop/2024SuperHypersonic/blob/main/UpdatedSajbenDiffuser.pdf)
 
 ## Additional Case Information
 Additional case information including meshes, preliminary results, experimental data, etc. will be
