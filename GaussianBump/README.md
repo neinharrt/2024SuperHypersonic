@@ -9,18 +9,18 @@ In this convention, `p0` corresponds to first-order accurate discretizations, `p
 
 An example data file location and name would be
 ```
-ND/conv-p2.csv
+ND/Conv-p2.csv
 ```
 
-Other files/images submitted for specific simulation should follow a similar format with `Conv` replaced by an appropriate description (InletMachProfile) and the grid index should be indicated:
+Other files/images submitted for specific simulations should follow a similar format with `Conv` replaced by an appropriate description (e.g., `InletMachProfile`) and the grid index should be indicated:
 ```
 <GroupOrCodeName>/<Description>-h<GridIndex>-p<OrderIndex>.<ext>
 ```
-In this convention, h0 should correspond to the coarsest spatial discretization submitted in the corresponding convergence file (`<GroupOrCodeName>/Conv-p<OrderIndex>.csv`), h1 to the next finest, etc.
+In this convention, h1 should correspond to the coarsest spatial discretization submitted in the corresponding convergence file (`<GroupOrCodeName>/Conv-p<OrderIndex>.csv`), h2 to the next finest, etc.
 
-For example, inlet Mach number profile submitted for the fouth level of refinement with `p = 2` elements would be
+For example, inlet Mach number profile submitted for the third level of refinement with `p = 2` elements would be
 ```
-ND/InletMachProfile-h4-p2.png
+ND/InletMachProfile-h3-p2.png
 ```
 
 ## Data format
