@@ -3,13 +3,24 @@
 ## Data organization
 Groups should submit convergence data (DOFs, enthalpy error, x location of shock attachment, other pertinent information) in separate files following the file location and name convention:
 ```
-<GroupName>/<Code>-p<OrderIndex>.csv
+<GroupOrCodeName>/Conv-p<OrderIndex>.csv
 ```
 In this convention, `p0` corresponds to first-order accurate discretizations, `p1` corresponds to second-order accurate discretizations, etc.
 
 An example data file location and name would be
 ```
-ND/HOIST-p2.txt
+ND/conv-p2.csv
+```
+
+Other files/images submitted for specific simulation should follow a similar format with `Conv` replaced by an appropriate description (InletMachProfile) and the grid index should be indicated:
+```
+<GroupOrCodeName>/<Description>-h<GridIndex>-p<OrderIndex>.<ext>
+```
+In this convention, h0 should correspond to the coarsest spatial discretization submitted in the corresponding convergence file (`<GroupOrCodeName>/Conv-p<OrderIndex>.csv`), h1 to the next finest, etc.
+
+For example, inlet Mach number profile submitted for the fouth level of refinement with `p = 2` elements would be
+```
+ND/InletMachProfile-h4-p2.png
 ```
 
 ## Data format
@@ -17,13 +28,13 @@ For each contribution, we are requesting convergence information. Each contribut
 
 The data-header should be the following:
 ```
-Ndofs, Herror, Shock attachment (x), <Additional 1>, ...
+Ndofs, Herror, Xattach, <Additional1>, <Additional2>, ...
 ```
 
-An example of data file contents for a submission that does not provide 'Shock attachment (x)' would be:
+An example of data file contents for a submission that does not provide 'Xattach' would be:
 ```
-Ndofs,Herror,Shock attachment (x),Solution dofs,Mesh dofs
-3792,0.00145,0.10279225135,2844,948
-15166,0.000356,0.10301295362,11376,3790
-60662,9.43e-05,0.10285594945,45504,15158
+Ndofs,Herror,Xattach,Solution dofs,Mesh dofs
+3792,0.00145,NaN,2844,948
+15166,0.000356,NaN,11376,3790
+60662,9.43e-05,NaN,45504,15158
 ```
