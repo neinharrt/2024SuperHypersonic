@@ -1,0 +1,22 @@
+Submitted by: Kevin Holst, University of Tennessee, kevin.holst@utk.edu
+Solver: Kestrel using the finite element solver COFFE
+Results provide for P1 meshes RQ50, RQ100, RQ150, RQ200, RQ250, RQ300, RQ400, RQ500
+Run with 4 different time step sizes: 0.001, 0.002, 0.004, 0.01
+Run with 3 different time integration methods: SDIRK22, SDIRK33, and SDIRK45, which are 2nd, 3rd, and 4th-order, respectively.
+
+Directory layout is as follows:
+[mesh]
+-[time step]
+--[time integration method]
+
+Data for lines 1-3 are provided in Tecplot ascii format
+
+Images were created in the following manner:
+-Paraview used to compute gradient of density at each node
+-Paraview used to compute Schlieren value at each node
+-Schlieren values dumped to CSV
+-CSV read into Python Pandas DataFrame
+-Matplotlib imshow used with interpolation='bilinear'. This allowed me to create an image that is exactly the flow domain requested.
+-vortexFull.png is the entire domain [0,2] x [0,1]
+-vortexZoom.png is the subdomain [0.9,1.2] x [0.33,0.63]
+-All images are grayscale using the 'binary' colormap in imshow and the colormap ranges from 0.05 to 2.4
