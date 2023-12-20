@@ -1,2 +1,0 @@
-top and bottom pressures are reported for each grid resolution, 0-coarsest to 4-finest
-separation location and wall forces csv files contain results for all grid resolutions with first index indicating the grid resolution.
