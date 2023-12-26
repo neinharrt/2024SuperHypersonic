@@ -1,0 +1,14 @@
+J. Brad Maeng. jmaeng@sandia.gov 
+Sandia National Laboartories
+
+Shock vortex interaction problem. Each directory contains line profiles and Schlieren plots. 
+
+For all results, time explicit 4th order Runge-Kutta scheme was used with a fixed global time step 
+
+Directory layout:
+sccfv/sc4 - structured cell-centered finite volume results simulated using the low-dissipation Subbareddy-Candler inviscid flux with 4th order central flux
+sccfv/hcusp-hybrid - structured cell-entered finite volume results simulated using the hybridized low-dissipation flux splitting scheme (LDFSS)
+dg/p1-lgl-av - unstructured discontinuous Galerkin results simulated using the entropy-stable inviscid flux on P1 Legendre-Gauss-Lobatto solution points stablized with the entropy-stable artificial viscosity method
+dg/p1-lgl-av-pde - unstructure discontinuous Galerkin results simulated using the entropy-stable inviscid flux on P1 Legendre-Gauss-Lobatto solution points stabilized with a PDE-based entropy stable artificial viscosity method 
+dg/p3-lgl-av - unstructured discontinuous Galerkin results simulated using the entropy-stable inviscid flux on P3 Legendre-Gauss-Lobatto solution points stablized with the entropy-stable artificial viscosity method
+dg/p3-lgl-av-pde - unstructured discontinuous Galerkin results simulated using the entropy-stable inviscid flux on P3 Legendre-Gauss-Lobatto solution points stabilized with a PDE-based entropy stable artificial viscosity method 

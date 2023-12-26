@@ -1,0 +1,6 @@
+J. Brad Maeng. jmaeng@sandia.gov 
+Sandia National Laboartories
+
+Sajben transonic diffusor problem. 
+Top and bottom pressures are reported for each grid resolution ranging from the 0-coarsest to 4-finest
+Separation location and wall forces csv files contain results for all grid resolutions with first index indicating the grid resolution.
